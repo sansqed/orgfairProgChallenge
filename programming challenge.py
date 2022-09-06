@@ -108,7 +108,7 @@ def timer():
     time.sleep(3)
 
     print("\nYour remaining time:")
-    timer = [00, 15]
+    timer = [30, 0]
 
     while timer != [0,0]:
 
