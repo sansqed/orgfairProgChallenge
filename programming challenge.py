@@ -146,8 +146,9 @@ def loadPlayers():
         reader = csv.reader(playerscsv)
 
         for row in reader:
-            tempPlayer = Player(row[0], row[1], int(row[2]), int(row[3]), row[4], float(row[5]), int(row[6]), int(row[7]))
-            players.append(tempPlayer)
+            if len(row)>0:
+                tempPlayer = Player(row[0], row[1], int(row[2]), int(row[3]), row[4], float(row[5]), int(row[6]), int(row[7]))
+                players.append(tempPlayer)
 
 # sort and print
 def leaderboard():
